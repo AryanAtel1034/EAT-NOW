@@ -1,0 +1,18 @@
+Index: app/src/main/res/layout/activity_billing_view.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_billing_view.xml b/app/src/main/res/layout/activity_billing_view.xml
+--- a/app/src/main/res/layout/activity_billing_view.xml	
++++ b/app/src/main/res/layout/activity_billing_view.xml	(date 1677421162118)
+@@ -818,7 +818,8 @@
+                     android:layout_toRightOf="@id/payTotalAmount"
+                     android:text="Place Order"
+                     android:textColor="#fff"
+-                    android:textSize="13sp" />
++                    android:textSize="13sp"
++                    android:textStyle="bold"/>
+ 
+ 
+             </RelativeLayout>

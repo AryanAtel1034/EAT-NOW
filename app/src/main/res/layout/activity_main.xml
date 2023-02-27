@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/hi_klaus"
+                android:textColor="#9D3C72"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/order_and_eat"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/txtName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/man"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtcaption"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/search_background"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:hint="@string/find_your_food"
+                android:inputType="text"
+                android:padding="10dp"
+                android:paddingStart="19dp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            <RelativeLayout
+                android:id="@+id/crdBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtSearch"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="160dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#F3AAC2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/crdImage"
+                            android:layout_width="138dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/peach"
+                            android:src="@drawable/bike" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="7dp"
+                            android:id="@+id/crdText1"
+                            android:layout_marginTop="19dp"
+                            android:layout_toEndOf="@+id/crdImage"
+                            android:text="Free delivery"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="14dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@+id/crdText1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_toEndOf="@+id/crdImage"
+                            android:text="May 2-June 10"
+                            android:textColor="#000"
+                            android:textSize="17sp"
+                            android:id="@+id/crdText2"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnOrderNow"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/crdText2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginBottom="9dp"
+                            android:background="@drawable/circular_btn"
+                            android:backgroundTint="#9D3C72"
+                            android:minHeight="48dp"
+                            android:onClick="seeAll"
+                            android:text="Order Now"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crdBanner"
+                android:id="@+id/categorieView"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Categories"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/txtCategories"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerCategories"
+                    android:layout_below="@id/txtCategories">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categorieView">
+
+                <TextView
+                    android:id="@+id/txtPopular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Populars"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="159dp"
+                    android:layout_toEndOf="@+id/txtPopular"
+                    android:text="See all"
+                    android:textColor="#9D3C72"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/txtSeeAll"
+                    android:onClick="seeAll"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerPopular"
+                    android:layout_below="@id/txtPopular">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">demoZomato</string>
+    <string name="find_your_food">Find your Food</string>
+    <string name="order_and_eat">Order and Eat</string>
+    <string name="hi_klaus">Hi klaus</string>
+</resources>

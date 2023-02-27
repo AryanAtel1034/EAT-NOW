@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person_about"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Personal Details"
+
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="55dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="55dp"
+        android:textColor="#8B7E74"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif"
+        android:hint="Mobile Number "
+        android:inputType="number"
+        android:textColor="#6A615A"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Address "
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="55dp"
+        android:textColor="#6A615A"
+        android:inputType="text"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="55dp"
+        android:background="#cb202d"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:id="@+id/btnContinue"/>
+
+</LinearLayout>

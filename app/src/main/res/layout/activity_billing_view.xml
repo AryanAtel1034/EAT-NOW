@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billing_View"
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="left|center">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/timer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Delivery in 35-40 min"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ITEM(S) ADDED"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="29dp"
+                android:textColor="#000"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:padding="5dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:gravity="left|center">
+
+                       <TextView
+                           android:id="@+id/txtOriginalSelectedDishName"
+                           android:layout_height="wrap_content"
+                           android:layout_width="100dp"
+                           android:fontFamily="sans-serif"
+                           android:text="MC Spicy Chicken Tikka "
+                           android:textColor="#000"
+                           android:textSize="12.5sp"
+                           android:textStyle="bold"
+                           android:layout_marginLeft="25dp"
+                          />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="2"
+                           android:textColor="#000"
+                           android:textSize="13sp"
+                           android:id="@+id/txtOriginalSelectedQuantity"
+                           android:layout_marginLeft="160dp"/>
+
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="left|center">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/rupee"
+                            android:layout_marginLeft="25dp"/>
+
+                        <TextView
+                            android:id="@+id/txtOriginalSelectedPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="750"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="1500"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:id="@+id/txtCalculatedSelectedPrize"
+                            android:layout_marginLeft="210dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:padding="5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="left|center"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Add more items"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/arrow"
+                                android:layout_marginLeft="173dp"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="left|center"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/edit" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Add cooking instruction"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/arrow"
+                                android:layout_marginLeft="118dp"/>
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="left|center"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/cutlery" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Don't send cutlery with this order"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/checkbox"
+                                android:layout_marginLeft="45dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BILL SUMMARY"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginTop="29dp"
+                    android:textColor="#000"
+                    android:letterSpacing="0.2"
+                    android:fontFamily="sans-serif-condensed"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="left|center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Subtotal"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+
+                                android:layout_marginLeft="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rupee" />
+
+
+                            <TextView
+                                android:id="@+id/txtBillingPrize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="750"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="left|center">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bank" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="GST and restaurant charges"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+
+                                android:layout_marginLeft="70dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rupee" />
+
+                            <TextView
+                                android:id="@+id/txtBillingTaxPrize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="37.5"
+                                android:textColor="#000"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="left|center">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/motorbike" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Restaurant and delivery partner fee"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="sans-serif"
+                                android:letterSpacing="0.1"
+                                android:text="FREE"
+                                android:textColor="#3A98B9"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="left|center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Grand Total"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+
+                                android:layout_marginLeft="180dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rupee" />
+
+
+                            <TextView
+                                android:id="@+id/txtFinalBillingPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="787.5"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Before you place the order"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_marginTop="29dp"
+                    android:textColor="#000"
+                    android:letterSpacing="0.2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="true"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:padding="5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:onClick="detailsSection"
+                    android:id="@+id/txtxDetails">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center">
+
+                        <TextView
+                            android:id="@+id/txtxDetailTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your details"
+                            android:textColor="#000"
+                            android:textSize="12.5sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="25dp"/>
+
+                        <TextView
+                            android:id="@+id/txtxDetailName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Aryan Atel,"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="7dp"
+                            android:textColor="#8B7E74"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txtxDetailTitle" />
+
+                        <TextView
+                            android:id="@+id/txtxDetailNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="94********"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="7dp"
+
+                            android:textColor="#8B7E74"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/txtxDetailName"
+                            app:layout_constraintTop_toBottomOf="@+id/txtxDetailTitle"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/arrow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.944"
+                            app:layout_constraintStart_toEndOf="@+id/txtxDetailTitle"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.485" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="155dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="100% cancellation fee will be applicable if you decide to cancel the orde any time after the order placement. Avoid cancellation as it leads to food wastage"
+
+                        android:textColor="#8B7E74"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    
+    </ScrollView>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/lastcircular">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/location"
+                    />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Delivery at Home "
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/location"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtAddres"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hinghna T point Nagpur"
+                    android:textColor="#8B7E74"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address"
+                    android:layout_marginLeft="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:id="@+id/txtChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Change "
+                    android:textColor="#cb202d"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAddres"
+                    android:layout_marginBottom="8dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/card"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/creditcard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/payUsing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="PAY USING"
+                android:textColor="#8B7E74"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/card"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_marginLeft="7dp"
+                />
+
+            <ImageView
+                android:id="@+id/arrowup"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/arrowup"
+                app:layout_constraintStart_toEndOf="@+id/payUsing"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="3dp"
+                android:text="atelaryan103@sbi"
+                android:textColor="#000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/arrowup" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbtnred"
+                android:padding="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnFinal">
+
+                <TextView
+                    android:id="@+id/payTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000.21"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/total"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payTotalAmount"
+                    android:fontFamily="sans-serif"
+                    android:text="TOTAL"
+                    android:textColor="#D8CBC1"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/placeOrderBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/payTotalAmount"
+                    android:layout_toRightOf="@id/payTotalAmount"
+                    android:text="Place Order"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
